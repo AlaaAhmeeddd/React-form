@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #324151;
+}
+ul{
+  list-style: none;
+}
+.header{
+  background-color: #03012b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  height: 35px;
+}
+.header .logo{
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+}
+.header ul{
+  display: flex;
+  gap: 25px;
+  color: #aaaaaa;
+}
+.header ul li{
+  cursor: pointer;
+  transition: 0.2s;
+}
+.header ul li:hover{
+  color: white;
+}
+.header .login{
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 40px auto;
+  gap: 25px;
+  color: white;
+  position: relative;
+}
+form textarea,
+form input{
+  border-radius: 5px;
+  outline: none;
+  font-size: 15px;
+  margin-top: 8px;
+}
+form input{
+  height: 30px;
+  border: none;
+  padding: 5px 10px;
+}
+form textarea{
+  height: 120px;
+  resize: none;
+  font-family: sans-serif;
+  padding: 10px;
+}
+form .input-field{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+form span.error{
+  background-color: #03012b;
+  border-radius: 5px;
+  padding: 5px;
+  width: fit-content;
+  position: absolute;
+  right: 0;
+  top: -12px;
+}
+form span.error::before{
+  position: absolute;
+  content: '';
+  border: 5px solid #03012b;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -4px;
+  transform: rotate(45deg);
+}
+form input[type="submit"]{
+  background-color: white;
+  cursor: pointer;
+}
+.footer{
+  background-color: #03012b;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
